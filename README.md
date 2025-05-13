@@ -215,6 +215,15 @@ MS Access
 
 ## 4장 SQL
 
+### View
+- `virtual table`
+- `query modification`
+    - `data dictionary` 에 view생성 명령을 저장해놓고, 해당 명령을 토대로 view의 질의를 대신 수행함. 즉, view테이블에 질의하는것은 view테이블이 참조한 원본 테이블에 view의 조건을 만족하는 가상의 테이블에 질문하는 것임.
+
+- 데이터를 가지고 있지 않다. 
+- order by 불가능하다.
+
+
 ### SQL 함수들
 
 ``date 타입 함수``
@@ -231,3 +240,4 @@ MS Access
 | `DateAdd("interval", number, date)` | 날짜에 기간 더하기 | `DateAdd("m", 2, #2023-01-01#)` → `2023-03-01` |
 | `Format(date, "format")` | 날짜 형식 변경 | `Format(Date(), "yyyy-mm-dd")` |
 | `IsDate(value)` | 날짜인지 여부 확인 | `IsDate("2025-04-17")` → `True` |
+
